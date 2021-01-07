@@ -1,4 +1,5 @@
 .DS_Store
+.env
 audio.flac
 audio.m4a
 test.py
