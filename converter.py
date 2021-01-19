@@ -5,9 +5,9 @@ class Converter:
         self.audio = pydub.AudioSegment.from_file(audio_path)
 
     def convert(self, desired_format):
-        output = './audio-5.'+ desired_format
+        output = './audio.'+ desired_format
         self.audio.export(output, format=desired_format)
         print('Successfully completed conversion')
 
-audio_converter = Converter('./audio-5.mp3')
+audio_converter = Converter('./audio.mp3')
 audio_converter.convert('flac')

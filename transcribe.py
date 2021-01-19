@@ -37,11 +37,11 @@ class AudioTranscriber:
 
         #Writing transcript into text file
         print('saving transcript')
-        with open('transcript-3.txt', 'w') as file:
+        with open('transcript.txt', 'w') as file:
             file.write(transcript)
         
 
-zoom_project = AudioTranscriber("gs://zoom_project_data/audio-3.flac")
+zoom_project = AudioTranscriber("gs://zoom_project_data/audio.flac")
 transcript = zoom_project.transcribe()
 
 #TODO:
