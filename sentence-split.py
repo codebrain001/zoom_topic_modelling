@@ -1,5 +1,6 @@
 import csv
 
+#Writing to CSV 
 with open('transcript.txt') as file_, open('transcript.csv', 'w') as csvfile:
     lines = [x for x in file_.read().strip().split('.') if x]
     writer = csv.writer(csvfile, delimiter=',')
