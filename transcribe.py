@@ -5,7 +5,7 @@ from google.cloud import speech
 from google.oauth2 import service_account
 
 
-class AudioTranscriber:
+class Transcriber:
     def __init__(self,URI):
         self.credentials = service_account.Credentials.from_service_account_file(
             'key.json')
@@ -41,7 +41,7 @@ class AudioTranscriber:
             file.write(transcript)
         
 
-zoom_project = AudioTranscriber("gs://zoom_project_data/audio.flac")
+zoom_project = Transcriber("gs://zoom_project_data/audio.flac")
 transcript = zoom_project.transcribe()
 
 #TODO:
