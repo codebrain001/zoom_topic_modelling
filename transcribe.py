@@ -41,13 +41,4 @@ class Transcriber:
             file.write(transcript)
         
 
-zoom_project = Transcriber("gs://zoom_project_data/audio.flac")
-transcript = zoom_project.transcribe()
-
-#TODO:
-# Add the 3 different transcript
-
-#FIXME:
-#The new line cleaning
-
 
