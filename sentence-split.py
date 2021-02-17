@@ -1,6 +1,5 @@
 import csv
 
-
 class Spliter():
 
     def split(self):
