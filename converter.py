@@ -1,5 +1,4 @@
 import pydub
-
 class Converter:
     def __init__(self, audio_path):
         self.audio = pydub.AudioSegment.from_file(audio_path)
@@ -8,6 +7,3 @@ class Converter:
         output = './audio.'+ desired_format
         self.audio.export(output, format=desired_format)
         print('Successfully completed conversion')
-
-audio_converter = Converter('./audio.mp3')
-audio_converter.convert('flac')
